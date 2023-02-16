@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+html {
+  color-scheme: dark light;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0 auto;
+}
+
+.heading {
+    text-align: center;
+}
+
+.card {
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid Highlight;
+  max-inline-size: 30rem;
+  margin: 4rem auto;
+}
