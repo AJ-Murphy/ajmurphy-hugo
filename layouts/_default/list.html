@@ -1,16 +1,18 @@
 {{ define "main" }}
 <main>
-    <ul>
+  <ul>
     <!-- Ranges through content/posts/*.md -->
     {{ range .Site.RegularPages }}
-        <li>
-            <article class="card">
-                <h2>
-                    <a href="{{.Permalink}}">{{.Title}}</a>
-                </h2>
-            </article>
-        </li>
+    <li>
+      <article class="card">
+        <h2>{{.Title}}</h2>
+        <p>{{ .Summary }}</p>
+        {{ if .Truncated }}
+        <a href="{{.Permalink}}"> View full article </a>
+        {{ end }}
+      </article>
+    </li>
     {{ end }}
-    </ul>
+  </ul>
 </main>
 {{ end }}
